@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="~/Home/Index" class="navbar-brand">Главная</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+       
+   
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

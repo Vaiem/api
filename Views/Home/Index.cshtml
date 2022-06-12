@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Resrvation>
+@{
+    ViewData["Title"] = "Reservations";
+    
+}
+<button style="margin-left:20px;" class="btn btn-primary">APi</button>
+<table class="table">
+    <tbody>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+        </tr>
+       
+
+        @foreach (var item in Model)
+        {
+           <tr>
+               <td>@item?.AutoNumber</td>
+               <td>@item?.ClientName</td>
+           </tr>
+        } 
+    </tbody>
+</table>
+        <h2>Reservations</h2>
+
